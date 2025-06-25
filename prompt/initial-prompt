@@ -1,0 +1,3 @@
+Luke's Shower Tracker is a fun, friendly web app designed to help track how many days it has been since Luke last showered. The app features a large, central day counter and playful, thematic visuals that change as more days pass, making it engaging for a 1st grader. A simple password-protected reset allows a parent or admin to mark when Luke has showered. The app is responsive and works on both mobile and tablet devices.
+
+Prompt: Build a playful, kid-friendly web app that displays the number of days since Luke last showered in large text, with changing visuals to reflect increasing dirtiness. Include a simple password prompt for a parent/admin to reset the timer. The app should be simple, fun, and work well on mobile and tablet.
