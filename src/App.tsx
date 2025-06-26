@@ -156,28 +156,23 @@ function App() {
       <h1 style={{ position: "relative", zIndex: 10 }}>
         Luke's Shower Tracker 🚿
       </h1>
-      {/* Preview slider for development only */}
-      {import.meta.env.MODE !== "production" && (
-        <div style={{ margin: "1rem 0", position: "relative", zIndex: 10 }}>
-          <label htmlFor="preview-slider">Preview day: </label>
-          <input
-            id="preview-slider"
-            type="range"
-            min={0}
-            max={MAX_DAYS}
-            value={previewDay ?? days}
-            onChange={(e) => setPreviewDay(Number(e.target.value))}
-            style={{ width: 200 }}
-          />
-          <span style={{ marginLeft: 8 }}>{previewDay ?? days}</span>
-          <button
-            style={{ marginLeft: 16 }}
-            onClick={() => setPreviewDay(null)}
-          >
-            Reset Preview
-          </button>
-        </div>
-      )}
+      {/* Preview slider */}
+      <div style={{ margin: "1rem 0", position: "relative", zIndex: 10 }}>
+        <label htmlFor="preview-slider">Preview day: </label>
+        <input
+          id="preview-slider"
+          type="range"
+          min={0}
+          max={MAX_DAYS}
+          value={previewDay ?? days}
+          onChange={(e) => setPreviewDay(Number(e.target.value))}
+          style={{ width: 200 }}
+        />
+        <span style={{ marginLeft: 8 }}>{previewDay ?? days}</span>
+        <button style={{ marginLeft: 16 }} onClick={() => setPreviewDay(null)}>
+          Reset Preview
+        </button>
+      </div>
       {/* Gross visual is now behind the tracker card */}
       <div
         className={`gross-visual gross-${grossLevel}`}
